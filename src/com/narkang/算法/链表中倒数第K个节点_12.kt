@@ -32,8 +32,8 @@ fun findKthToTail(head: Node?, k: Int): Node?{
     var pointer: Node? = head
     //pointer先走k-1个位置
     for (i in 1 until k){
-        if(pointer?.nexNode != null){
-            pointer = pointer.nexNode
+        if(pointer?.nextNode != null){
+            pointer = pointer.nextNode
         }else{
             return null
         }
@@ -41,9 +41,9 @@ fun findKthToTail(head: Node?, k: Int): Node?{
 
     var temp = head
     //pointer走了k-1个位置之后，head开始走
-    while (pointer?.nexNode != null){
-        pointer = pointer.nexNode
-        temp = temp?.nexNode
+    while (pointer?.nextNode != null){
+        pointer = pointer.nextNode
+        temp = temp?.nextNode
     }
 
     return temp

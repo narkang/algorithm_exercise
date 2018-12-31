@@ -21,14 +21,14 @@ fun printNodes(head: Node?){
     var temp = head
     while (temp != null){
         println(temp.value)
-        temp = temp.nexNode
+        temp = temp.nextNode
     }
 }
 
 /**
  *  链表节点
  */
-class Node(var value: Int?, var nexNode: Node?)
+class Node(var value: Int?, var nextNode: Node?)
 
 /**
  *  head：        头节点
@@ -40,21 +40,21 @@ fun deleteNode(head: Node?, toBeDeleted: Node?): Node?{
     }
 
     if(head == toBeDeleted){
-        return head.nexNode
+        return head.nextNode
     }
 
     //如果删除的节点是尾节点
-    if(toBeDeleted.nexNode == null){
+    if(toBeDeleted.nextNode == null){
 
         var temp = head
-        while(temp?.nexNode != toBeDeleted){
-            temp = head.nexNode
+        while(temp?.nextNode != toBeDeleted){
+            temp = head.nextNode
         }
-        temp.nexNode = null
+        temp.nextNode = null
 
     }else{
-        toBeDeleted.value = toBeDeleted.nexNode?.value
-        toBeDeleted.nexNode = toBeDeleted.nexNode?.nexNode
+        toBeDeleted.value = toBeDeleted.nextNode?.value
+        toBeDeleted.nextNode = toBeDeleted.nextNode?.nextNode
     }
 
     return head
