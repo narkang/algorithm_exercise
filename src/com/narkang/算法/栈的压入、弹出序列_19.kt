@@ -33,7 +33,10 @@ fun isPopOrder(pushOrder: IntArray, popOrder: IntArray): Boolean{
 
             //先进行压栈处理，条件是栈顶元素不是要pop的元素
             while (stackData.size == 0 || stackData.peek() != popOrder[nextPop]){
-
+//                if(stackData.size > 0){
+//                    var peekValue = stackData.peek()
+//                    println()
+//                }
                 if(nextPush - push == length){
                     break
                 }
