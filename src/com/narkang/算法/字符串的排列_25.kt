@@ -7,7 +7,7 @@ package com.narkang.算法
  */
 fun main(args: Array<String>) {
 
-    var chars = charArrayOf('a', 'b', 'c')
+    var chars = charArrayOf('a', 'b', 'c', 'd')
     permutation(chars)
 
 }
@@ -19,18 +19,22 @@ fun permutation(chars: CharArray){
 }
 
 fun permutation(chars: CharArray, begin: Int){
-
-    if(chars.size - 1 == begin){
-        println(String(chars))
+    var _chars = chars
+    if(_chars.size - 1 == begin){
+        println(String(_chars))
     }else{
         var temp: Char?
-        for(i in begin until chars.size){
-            temp = chars[begin]
-            chars[begin] = chars[i]
-            chars[i] = temp
+        for(i in begin until _chars.size){
+            temp = _chars[begin]
+            _chars[begin] = _chars[i]
+            _chars[i] = temp
 
             // 处理下一个位置
-            permutation(chars, begin + 1)
+            permutation(_chars, begin + 1)
+            //由于数据交互了，所以要还原回来
+            temp = _chars[begin]
+            _chars[begin] = _chars[i]
+            _chars[i] = temp
         }
     }
 }
