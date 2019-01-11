@@ -8,11 +8,12 @@ import java.util.*
 fun main(args: Array<String>) {
     var numbers = intArrayOf(4,5,1,6,2,7,3,8)
     var resultNumbers = getLeastNumbers(numbers, 4)
-    printResultNumber(resultNumbers)
+    printResultNumber(resultNumbers, 4)
 }
 
 
-fun printResultNumber(number: List<Int>?){
+fun printResultNumber(number: List<Int>?, k: Int){
+    println("最小的${k}个数结果是：")
     for (i in 0 until number!!.size){
         print("${number[i]}\t")
     }
