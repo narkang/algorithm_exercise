@@ -4,6 +4,7 @@ import java.util.*
 
 /**
  * https://blog.csdn.net/gg543012991/article/details/52601195
+ * https://blog.csdn.net/zz0129/article/details/81301263
  *
  *输入一个正整数数组，把数组里所有数字拼接起来排成一个数，打印能拼接出的所有数字中最小的一个。
  *
