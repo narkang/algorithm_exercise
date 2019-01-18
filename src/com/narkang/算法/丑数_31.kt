@@ -7,7 +7,10 @@ package com.narkang.算法
  * 例如6、8 都是丑数，但14 不是，它包含因子7。习惯上我们把1当做第一个丑数。
  */
 fun main(args: Array<String>) {
-    println("第index个丑数是${getUglyNumber(10)}")
+    var index = 10
+    println("第${index}个丑数是${getUglyNumber(index)}")
+    println("----------------------------------------")
+    println("第${index}个丑数是${getUglyNumber2(index)}")
 }
 
 //方法一
@@ -20,7 +23,7 @@ fun getUglyNumber(index: Int): Int {
     while (uglyFound < index) {
         number++
         if (isUgly(number)) {
-            println(number)
+//            println(number)
             uglyFound ++
         }
     }
@@ -35,4 +38,30 @@ fun isUgly(_number: Int): Boolean {
     while (number % 5 == 0) number /= 5
 
     return number == 1
+}
+
+//方法二
+fun getUglyNumber2(index: Int): Int?{
+
+    var uglyArray = arrayOfNulls<Int>(index)
+    uglyArray[0] = 1
+    var p0 = 0
+    var p1 = 0
+    var p2 = 0
+
+    for (i in 1 until index){
+        var min = min(uglyArray[p0]!!.times(2), uglyArray[p1]!!.times(3), uglyArray[p2]!!.times(5))
+        uglyArray[i] = min
+        while (uglyArray[p0]!!.times(2) <= uglyArray[i]!!) p0 ++
+        while (uglyArray[p1]!!.times(3) <= uglyArray[i]!!) p1 ++
+        while (uglyArray[p2]!!.times(5) <= uglyArray[i]!!) p2 ++
+    }
+
+    return uglyArray[index-1]
+
+}
+
+fun min(p0: Int, p1: Int, p2: Int): Int{
+    var min = if(p0 < p1) p0 else p1
+    return if(min < p2) min else p2
 }
