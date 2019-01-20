@@ -19,7 +19,32 @@ fun main(args: Array<String>) {
 
     var str = "sdfgbsdkfgdfgv"
     printFirstLetter(str)
+    println("----------------")
+    printFirstLetter2(str)
 
+//    var hashMap = LinkedHashMap<Char, Int>()
+//    hashMap['b'] = 1
+//    hashMap['a'] = 1
+//    hashMap['d'] = 1
+//    hashMap['c'] = 1
+//    hashMap['f'] = 1
+//    hashMap['e'] = 1
+//    hashMap['k'] = 1
+//    hashMap['j'] = 1
+//    hashMap['w'] = 1
+//    hashMap['q'] = 1
+//    hashMap['p'] = 1
+//    hashMap['u'] = 1
+//
+//    var keys = hashMap.keys
+//    keys.forEach(::println)
+
+//    var entries = hashMap.entries
+//    for (e in entries) {
+//        if(e.value == 1){
+//            println("key是${e.key},value是${e.value}")
+//        }
+//    }
 }
 
 fun printFirstLetter(str: String) {
@@ -41,6 +66,23 @@ fun printFirstLetter(str: String) {
     for (e in entries) {
         if(e.value == 1){
             println("第一个第一次出现的字符是${e.key}")
+            return
+        }
+    }
+}
+
+//用类似哈希表的方式用来统计字符出现的次数，时间复杂度O(n)
+fun printFirstLetter2(str: String){
+
+    var hash = IntArray(255)
+
+    str.forEach {
+        hash[it.toInt()] = hash[it.toInt()]!!.plus(1)
+    }
+
+    str.forEach {
+        if(hash[it.toInt()] == 1){
+            println("第一个第一次出现的字符是$it")
             return
         }
     }
