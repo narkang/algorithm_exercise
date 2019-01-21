@@ -14,6 +14,7 @@ package com.narkang.算法
  * 如果字符串长度为n， 那么第一次扫描的时间复杂度是O(n)。第二次扫描时，同样0(1)能读出一个字符
  * 出现的次数，所以时间复杂度仍然是O(n)。这样算起来，总的时间复杂度是O(n)。
  *
+ * https://blog.csdn.net/baidu_34122324/article/details/82891280
  */
 fun main(args: Array<String>) {
 
