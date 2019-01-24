@@ -19,4 +19,72 @@ package com.narkang.算法.剑指offer
    */
 fun main(args: Array<String>) {
 
+   var array = intArrayOf(1, 2, 3, 3, 3, 3, 4, 5)
+   println(getKeyNum(array, 3))
+
+}
+
+fun getKeyNum(array: IntArray, key:Int): Int{
+   var keyNum = 0
+
+   if(array.isNotEmpty()){
+      var first = getFirstKey(array, 0, array.size, key)
+      var end = getLastKey(array, 0, array.size, key)
+      keyNum = end - first + 1
+   }
+
+   return keyNum
+}
+
+fun getFirstKey(array: IntArray, _start: Int, _end: Int, key: Int): Int{
+
+   var start = _start
+   var end = _end
+
+   if(start > end){
+      return -1
+   }
+
+   var midIndex = (start + end) / 2
+   //查找最前面的数字
+   if(array[midIndex] == key){
+      if((midIndex > 0 && array[midIndex - 1] != key) || midIndex == 0){
+         return midIndex
+      }else{
+         end = midIndex - 1
+      }
+   }else if(array[midIndex] > key){
+      end = midIndex - 1
+   }else{
+      start = midIndex + 1
+   }
+
+   return getFirstKey(array, start, end, key)
+}
+
+
+fun getLastKey(array: IntArray, _start: Int, _end: Int, key: Int): Int{
+
+   var start = _start
+   var end = _end
+
+   if(start > end){
+      return -1
+   }
+
+   var midIndex = (start + end) / 2
+   //查找最后面的数字
+   if(array[midIndex] == key){
+      if((midIndex < array.size - 1 && array[midIndex + 1] != key) || midIndex == array.size - 1){
+         return midIndex
+      }else{
+         start = midIndex + 1
+      }
+   }else if(array[midIndex] > key){
+      end = midIndex - 1
+   }else{
+      start = midIndex + 1
+   }
+
+   return getLastKey(array, start, end, key)
 }
