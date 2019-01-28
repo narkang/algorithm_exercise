@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MyJavaProject.iml" filepath="$PROJECT_DIR$/MyJavaProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android_interview.iml" filepath="$PROJECT_DIR$/android_interview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/com/narkang/算法/算法.iml" filepath="$PROJECT_DIR$/src/com/narkang/算法/算法.iml" />
     </modules>
   </component>
 </project>
