@@ -20,5 +20,48 @@ package com.narkang.算法.剑指offer
  * 个和为9 的连续序列｛4，5}。
  */
 fun main(args: Array<String>) {
+    val result = findContinuousSequence(9)
+    result.forEach(::println)
+}
+
+//查找连续的序列使其和为sum
+fun findContinuousSequence(sum: Int): ArrayList<ArrayList<Int>>{
+
+    val result = ArrayList<ArrayList<Int>>()
+
+    var small = 1
+    var big = 2
+    val middle = (1 + sum) / 2  //中间值
+    var currentSum = small + big
+
+    while (small < middle){
+
+        if(currentSum == sum){
+            val arrayList = ArrayList<Int>()
+            for(i in small .. big){
+                arrayList.add(i)
+            }
+            result.add(arrayList)
+        }
+
+        while (currentSum > sum){
+            currentSum -= small
+            small++
+
+            if(currentSum == sum){
+                val arrayList = ArrayList<Int>()
+                for(i in small .. big){
+                    arrayList.add(i)
+                }
+                result.add(arrayList)
+            }
+        }
+
+        big++
+        currentSum += big
+
+    }
+
+    return result
 
 }
