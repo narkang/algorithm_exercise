@@ -5,7 +5,7 @@
 ## 算法
 
 1. [剑指offer](algorithm/README_剑指offer.md)
-2. [LeetCode]
+2. [LeetCode]()
 
 ## Java
 
@@ -17,6 +17,6 @@
 
 1. [Android基础](android/README_Android.md)
 2. [Android进阶](android/README_Android.md)
-3. [Android新技术]
+3. [Android新技术](android/README_Android.md)
 
 ## 跨平台
