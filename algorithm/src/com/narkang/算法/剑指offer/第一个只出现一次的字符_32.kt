@@ -66,7 +66,7 @@ fun printFirstLetter(str: String) {
     var entries = hashMap.entries
     for (e in entries) {
         if(e.value == 1){
-            println("第一个第一次出现的字符是${e.key}")
+            println("第一个只出现一次的字符是${e.key}")
             return
         }
     }
@@ -83,7 +83,7 @@ fun printFirstLetter2(str: String){
 
     str.forEach {
         if(hash[it.toInt()] == 1){
-            println("第一个第一次出现的字符是$it")
+            println("第一个只出现一次的字符是$it")
             return
         }
     }

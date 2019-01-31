@@ -7,7 +7,7 @@ import java.util.*
  */
 fun main(args: Array<String>) {
     var pushOrder = intArrayOf(1, 2, 3, 4, 5)
-    var popOrder = intArrayOf(4, 5, 3, 1, 2)
+    var popOrder = intArrayOf(4, 5, 3, 2, 1)
     var possible = isPopOrder(pushOrder, popOrder)
     println(if(possible) "是" else "否")
 }

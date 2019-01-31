@@ -39,6 +39,7 @@ fun deleteNode(head: Node?, toBeDeleted: Node?): Node?{
         return head
     }
 
+    //如果删除的是头结点
     if(head == toBeDeleted){
         return head.nextNode
     }
@@ -51,7 +52,7 @@ fun deleteNode(head: Node?, toBeDeleted: Node?): Node?{
             temp = head.nextNode
         }
         temp.nextNode = null
-
+    //如果删除的是中间节点，直接用下一个节点替换前一个节点
     }else{
         toBeDeleted.value = toBeDeleted.nextNode?.value
         toBeDeleted.nextNode = toBeDeleted.nextNode?.nextNode
