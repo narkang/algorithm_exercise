@@ -42,3 +42,4 @@
 40. [和为s的连续正数序列](src/com/narkang/算法/剑指offer/和为s的连续正数序列_40.kt)
 41. [翻转单词顺序](src/com/narkang/算法/剑指offer/翻转单词顺序_41.kt)
 42. [左旋转字符串](src/com/narkang/算法/剑指offer/左旋转字符串_42.kt)
+43. [n个骰子的点数](src/com/narkang/算法/剑指offer/n个骰子的点数_43.kt)
