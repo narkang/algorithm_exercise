@@ -59,6 +59,6 @@ fun getMinInOrder(num: Array<Int>, firstIndex: Int, lastIndex: Int): Int{
 }
 
 fun main(args: Array<String>) {
-    var num = arrayOf(0, 1, 2, 3, 4)
+    val num = arrayOf(2, 3, 4, 0, 1)
     println("----->>>>"+getMin(num))
 }

@@ -2,8 +2,7 @@ package com.narkang.算法
 
 /**
 斐波那契数列
-  */
-
+ */
 fun main(args: Array<String>) {
     println("结果："+fibonacci(5))
 }

@@ -1,5 +1,7 @@
 package com.narkang.算法
 
+import com.sun.xml.internal.fastinfoset.util.StringArray
+
 /*
 * 先判断字符串中空格的数量。根据数量判断该字符串有没有足够的空间替换成"%20"。
 

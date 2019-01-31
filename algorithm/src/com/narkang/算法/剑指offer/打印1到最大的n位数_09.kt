@@ -5,7 +5,7 @@ package com.narkang.算法
  */
 fun main(args: Array<String>) {
 
-    printOneToNthDigits(3)
+    printOneToNthDigits(2)
 
 }
 
@@ -46,10 +46,12 @@ fun addOne(array: Array<Int>): Int{
 fun printArray(array: Array<Int>){
 
     var index = 0
+    //排除数组前面为0的数字
     while (index < array.size && array[index] == 0){
         index ++
     }
 
+    //从不是0的位置开始打印数组元素
     for (i in index until array.size){
         print(array[i])
     }

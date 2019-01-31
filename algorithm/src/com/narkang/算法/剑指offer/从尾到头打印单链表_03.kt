@@ -37,5 +37,4 @@ fun main(args: Array<String>) {
     listNode2.next = listNode3
 
     printListFromTailToHead(listNode)
-
 }
