@@ -13,6 +13,8 @@
  * 应该等于上一次循环中骰子点数和为n-1 、n-2 、n-3 、n-4, n-5 与n-6 的次数的总和，所以我们把另
  * 一个数组的第n个数字设为前一个数组对应的第n-1 、n-2 、n-3 、n-4、n-5与n-6之和。
  *
+ * http://www.cnblogs.com/xuanxufeng/p/6896569.html
+ *
  */
 fun main(args: Array<String>) {
 
