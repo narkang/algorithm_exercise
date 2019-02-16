@@ -43,4 +43,5 @@
 41. [翻转单词顺序](src/com/narkang/算法/剑指offer/翻转单词顺序_41.kt)
 42. [左旋转字符串](src/com/narkang/算法/剑指offer/左旋转字符串_42.kt)
 43. [n个骰子的点数](src/com/narkang/算法/剑指offer/n个骰子的点数_43.kt)
-43. [扑克牌的顺子](src/com/narkang/算法/剑指offer/扑克牌的顺子_44.kt)
+44. [扑克牌的顺子](src/com/narkang/算法/剑指offer/扑克牌的顺子_44.kt)
+45. [约瑟夫环问题](src/com/narkang/算法/剑指offer/约瑟夫环问题_45.kt)
