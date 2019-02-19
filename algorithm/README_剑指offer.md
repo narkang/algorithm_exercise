@@ -46,3 +46,4 @@
 44. [扑克牌的顺子](src/com/narkang/算法/剑指offer/扑克牌的顺子_44.kt)
 45. [约瑟夫环问题](src/com/narkang/算法/剑指offer/约瑟夫环问题_45.kt)
 46. [不用加减乘除做加法](src/com/narkang/算法/剑指offer/不用加减乘除做加法_46.kt)
+47. [把字符串转换成整数](src/com/narkang/算法/剑指offer/把字符串转换成整数_47.kt)
