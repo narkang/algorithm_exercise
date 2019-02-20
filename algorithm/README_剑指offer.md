@@ -48,3 +48,4 @@
 46. [不用加减乘除做加法](src/com/narkang/算法/剑指offer/不用加减乘除做加法_46.kt)
 47. [把字符串转换成整数](src/com/narkang/算法/剑指offer/把字符串转换成整数_47.kt)
 48. [树中两个结点的最低公共结点](src/com/narkang/算法/剑指offer/树中两个结点的最低公共结点_48.kt)
+49. [数组中重复的数字](src/com/narkang/算法/剑指offer/数组中重复的数字_49.kt)
