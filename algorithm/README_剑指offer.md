@@ -50,3 +50,4 @@
 48. [树中两个结点的最低公共结点](src/com/narkang/算法/剑指offer/树中两个结点的最低公共结点_48.kt)
 49. [数组中重复的数字](src/com/narkang/算法/剑指offer/数组中重复的数字_49.kt)
 50. [构建乘积数组](src/com/narkang/算法/剑指offer/构建乘积数组_50.kt)
+51. [正则表达式匹配](src/com/narkang/算法/剑指offer/正则表达式匹配_51.kt)
