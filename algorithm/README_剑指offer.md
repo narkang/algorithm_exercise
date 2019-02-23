@@ -51,3 +51,4 @@
 49. [数组中重复的数字](src/com/narkang/算法/剑指offer/数组中重复的数字_49.kt)
 50. [构建乘积数组](src/com/narkang/算法/剑指offer/构建乘积数组_50.kt)
 51. [正则表达式匹配](src/com/narkang/算法/剑指offer/正则表达式匹配_51.kt)
+52. [表示数值的字符串](src/com/narkang/算法/剑指offer/表示数值的字符串_52.kt)
