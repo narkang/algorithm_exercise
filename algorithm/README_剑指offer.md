@@ -52,3 +52,4 @@
 50. [构建乘积数组](src/com/narkang/算法/剑指offer/构建乘积数组_50.kt)
 51. [正则表达式匹配](src/com/narkang/算法/剑指offer/正则表达式匹配_51.kt)
 52. [表示数值的字符串](src/com/narkang/算法/剑指offer/表示数值的字符串_52.kt)
+53. [字符流中第一个不重复的字符](src/com/narkang/算法/剑指offer/字符流中第一个不重复的字符_53.kt)
