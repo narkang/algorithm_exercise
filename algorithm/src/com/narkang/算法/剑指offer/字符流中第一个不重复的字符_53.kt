@@ -5,4 +5,34 @@
  */
 fun main(args: Array<String>) {
 
+    val str = "google"
+    var onceChar = firstAppearOnce(str)
+    println("第一个不重复元素$onceChar")
+
+}
+
+
+/**
+ *  第一次数组中只出现一次的字符
+ */
+private fun firstAppearOnce(str: String): Char{
+
+    var charMap = LinkedHashMap<Char, Int>()
+    val len = str.length
+
+    for (i in 0 until len){
+        if(charMap.containsKey(str[i])){
+            var num = charMap[str[i]]
+            num?.let { charMap[str[i]] = it+1 }
+        }else{
+            charMap[str[i]] = 1
+        }
+    }
+
+    val keys = charMap.keys
+    keys.forEach{
+        if(charMap[it] == 1) return it
+    }
+
+    return '#'
 }
