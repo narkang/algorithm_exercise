@@ -30,10 +30,11 @@ fun main(args: Array<String>) {
     node9.next = node10
     node10.next = node11
     node11.next = node12
-    node12.next = node6
+    node12.next = null
 
     val enterNode = getEnterNode(head)
     enterNode?.let { println("环的入口节点值是${it.value}") }
+    if(enterNode == null) println("链表没有环")
 }
 
 fun getEnterNode(head: ListNode?): ListNode?{
