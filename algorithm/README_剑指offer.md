@@ -54,3 +54,4 @@
 52. [表示数值的字符串](src/com/narkang/算法/剑指offer/表示数值的字符串_52.kt)
 53. [字符流中第一个不重复的字符](src/com/narkang/算法/剑指offer/字符流中第一个不重复的字符_53.kt)
 54. [链表中环的入口结点](src/com/narkang/算法/剑指offer/链表中环的入口结点_54.kt)
+55. [删除链表中重复的结点](src/com/narkang/算法/剑指offer/删除链表中重复的结点_55.kt)
