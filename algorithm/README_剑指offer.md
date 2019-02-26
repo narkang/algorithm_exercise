@@ -60,3 +60,4 @@
 58. [把二叉树打印出多行](src/com/narkang/算法/剑指offer/把二叉树打印出多行_58.kt)
 59. [按之字形顺序打印二叉树](src/com/narkang/算法/剑指offer/按之字形顺序打印二叉树_59.kt)
 60. [二叉搜索树的第k个结点](src/com/narkang/算法/剑指offer/二叉搜索树的第k个结点_60.kt)
+61. [数据流中的中位数](src/com/narkang/算法/剑指offer/数据流中的中位数_61.kt)
