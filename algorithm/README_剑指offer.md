@@ -57,3 +57,6 @@
 55. [删除链表中重复的结点](src/com/narkang/算法/剑指offer/删除链表中重复的结点_55.kt)
 56. [二叉树的下一个结点](src/com/narkang/算法/剑指offer/二叉树的下一个结点_56.kt)
 57. [对称的二叉树](src/com/narkang/算法/剑指offer/对称的二叉树_57.kt)
+58. [把二叉树打印出多行](src/com/narkang/算法/剑指offer/把二叉树打印出多行_58.kt)
+59. [按之字形顺序打印二叉树](src/com/narkang/算法/剑指offer/按之字形顺序打印二叉树_59.kt)
+60. [二叉搜索树的第k个结点](src/com/narkang/算法/剑指offer/二叉搜索树的第k个结点_60.kt)
