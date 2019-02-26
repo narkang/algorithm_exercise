@@ -56,3 +56,4 @@
 54. [链表中环的入口结点](src/com/narkang/算法/剑指offer/链表中环的入口结点_54.kt)
 55. [删除链表中重复的结点](src/com/narkang/算法/剑指offer/删除链表中重复的结点_55.kt)
 56. [二叉树的下一个结点](src/com/narkang/算法/剑指offer/二叉树的下一个结点_56.kt)
+57. [对称的二叉树](src/com/narkang/算法/剑指offer/对称的二叉树_57.kt)
