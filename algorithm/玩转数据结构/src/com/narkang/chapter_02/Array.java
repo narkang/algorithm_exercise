@@ -37,4 +37,39 @@ class Array<T> {
     public boolean isEmpty(){
         return size == 0;
     }
+
+    /**
+     *  在index索引处添加元素
+     */
+    public void add(int index, T e){
+
+        if(size == data.length){
+            throw new IllegalArgumentException("Add failed. Array is full.");
+        }
+
+        if(index < 0 || index > size){
+            throw new IllegalArgumentException("Add failed. Require index >= 0 and index <= size.");
+        }
+
+        for (int i = size - 1; i>=index; i--){
+            data[i+1] = data[i];
+        }
+
+        data[index] = e;
+        size++;
+    }
+
+    /**
+     *  在所有元素前添加一个新元素
+     */
+    public void addFirst(T e){
+        add(0, e);
+    }
+
+    /**
+     *  在所有元素后面添加一个新元素
+     */
+    public void addLast(T e){
+        add(size, e);
+    }
 }
