@@ -1,5 +1,8 @@
 package com.narkang.chapter_02;
 
+/**
+ * 基于数组操作的工具类
+ */
 class Array<T> {
 
     private T[] data;  //维护的数据
