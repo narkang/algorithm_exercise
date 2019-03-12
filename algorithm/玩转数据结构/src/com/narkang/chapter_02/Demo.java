@@ -26,5 +26,13 @@ class Demo{
         data.set(5, 7);
         System.out.println(data.get(5));
         System.out.println(data.toString());
+
+        System.out.println("--------------");
+        data.remove(3);
+        System.out.println(data.toString());
+        data.removeFirst();
+        System.out.println(data.toString());
+        data.removeLast();
+        System.out.println(data.toString());
     }
 }
