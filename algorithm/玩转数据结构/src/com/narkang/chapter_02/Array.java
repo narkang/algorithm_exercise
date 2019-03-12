@@ -1,7 +1,7 @@
 package com.narkang.chapter_02;
 
 /**
- * 基于数组操作的工具类
+ * 基于数组操作的工具类，方便外部使用调用
  */
 class Array<T> {
 
@@ -28,7 +28,7 @@ class Array<T> {
     }
 
     /**
-     * 获取数组可以存放元素的个数
+     * 获取数组已经存放元素的个数
      */
     public int getSize(){
         return size;
@@ -75,4 +75,6 @@ class Array<T> {
     public void addLast(T e){
         add(size, e);
     }
+
+
 }
