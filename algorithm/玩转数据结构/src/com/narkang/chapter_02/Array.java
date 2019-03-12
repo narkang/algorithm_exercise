@@ -99,6 +99,36 @@ class Array<T> {
         data[index] = e;
     }
 
+    /**
+     *  查找数组中是否有元素
+     */
+    public boolean contains(T e){
+
+        for (int i = 0; i < size; i++){
+            if(data[i] == e){
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    /**
+     *  查找数组中指定元素的索引
+     */
+    public int find(T e){
+
+        for (int i = 0; i < size; i++){
+            if(data[i] == e){
+                return i;
+            }
+        }
+
+        return -1;
+    }
+
+
+
     @Override
     public String toString() {
 
