@@ -1,4 +1,4 @@
-package com.narkang.chapter_02;
+package com.narkang.玩转数据结构.chapter_02;
 
 class Demo{
 

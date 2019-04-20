@@ -1,4 +1,4 @@
-package com.narkang.chapter_02;
+package com.narkang.玩转数据结构.chapter_03;
 
 /**
  * 基于数组操作的工具类，方便外部使用调用
