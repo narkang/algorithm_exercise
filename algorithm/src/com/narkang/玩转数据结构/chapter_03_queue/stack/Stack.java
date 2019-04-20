@@ -1,4 +1,4 @@
-package com.narkang.玩转数据结构.chapter_03.stack;
+package com.narkang.玩转数据结构.chapter_03_queue.stack;
 
 public interface Stack<E> {
 

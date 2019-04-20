@@ -1,4 +1,4 @@
-package com.narkang.玩转数据结构.chapter_03.arrayQueue;
+package com.narkang.玩转数据结构.chapter_03_queue.arrayQueue;
 
 public class ArrayQueue<E> implements Queue<E>{
 

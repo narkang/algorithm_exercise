@@ -1,4 +1,4 @@
-package com.narkang.玩转数据结构.chapter_02;
+package com.narkang.玩转数据结构.chapter_03_queue.stack;
 
 /**
  * 基于数组操作的工具类，方便外部使用调用
@@ -174,6 +174,22 @@ class Array<T> {
             newData[i] = data[i];
         }
         data = newData;
+    }
+
+    /**
+     * 获取数组第一个元素
+     * @return
+     */
+    public T getFirst(){
+       return get(0);
+    }
+
+    /**
+     * 获取数组最后一个元素
+     * @return
+     */
+    public T getLast(){
+        return get(size - 1);
     }
 
     /**

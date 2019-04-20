@@ -1,4 +1,4 @@
-package com.narkang.玩转数据结构.chapter_03.arrayQueue;
+package com.narkang.玩转数据结构.chapter_03_queue.loopQueue;
 
 /**
  * 基于数组操作的工具类，方便外部使用调用
